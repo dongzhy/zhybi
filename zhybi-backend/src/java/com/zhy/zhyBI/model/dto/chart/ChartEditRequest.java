@@ -1,0 +1,44 @@
+package com.zhy.zhyBI.model.dto.chart;
+
+
+import lombok.Data;
+
+import java.io.Serializable;
+
+/**
+ * 编辑请求
+ *
+* @author <a href="https://github.com/dongzhy">程序员zhy</a>
+ */
+@Data
+public class ChartEditRequest implements Serializable {
+    /**
+     * 名称
+     *
+     */
+    private String name;
+
+    /**
+     * id
+     */
+    private Long id;
+
+    /**
+     * 分析目标
+     */
+    private String goal;
+
+    /**
+     * 图表数据
+     */
+    private String chartData;
+
+    /**
+     * 图标类型
+     */
+    private String chartType;
+
+
+
+    private static final long serialVersionUID = 1L;
+}
